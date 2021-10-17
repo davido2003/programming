@@ -5,4 +5,4 @@ from django.db.models import fields
 class ProgrammingNewsApiSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProgrammingNewsApi
-        fields = [ 'id','title','link','video']
+        fields = [ 'id','title','link','image','description']

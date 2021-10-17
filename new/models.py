@@ -3,9 +3,10 @@ from django.db import models
 class ProgrammingNewsApi(models.Model):
     title = models.CharField(max_length=100)
     def nameFile(instance, filename):
-        return '/'.join(['videos',str(instance.name), filename])
-    video = models.FileField(upload_to='namefile',blank=True)
+        return '/'.join(['images',str(instance.name), filename])
+    image = models.ImageField(upload_to='namefile',blank=True)
     link = models.URLField(max_length=200)
+    description = models.CharField(max_length=3000)
     
 
 
